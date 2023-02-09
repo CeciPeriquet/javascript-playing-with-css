@@ -1,3 +1,9 @@
+:root {
+  --base: #ffc600;
+  --spacing: 10px;
+  --blur: 10px;
+}
+
 body {
   text-align: center;
   background: #003e39;
@@ -6,7 +12,9 @@ body {
   font-weight: 100;
   font-size: 30px;
 }
-
+.hl {
+  color: var(--base);
+}
 .controls {
   margin-bottom: 50px;
 }
@@ -16,4 +24,9 @@ input {
 }
 .landscape {
   width: 800px;
+}
+img {
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
 }
